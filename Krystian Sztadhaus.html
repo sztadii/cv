@@ -1,0 +1,327 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+        <style>
+            :root {
+                --white: white;
+                --black: black;
+                --blue: #3f80f5;
+                --brown: #353633;
+                --gray: #27282a;
+            }
+
+            * {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+
+            body {
+                font-size: 16px;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            .top {
+                background: var(--brown);
+                text-align: center;
+                padding: 40px;
+            }
+
+            .top__heading {
+                font-size: 40px;
+                border: 3px solid var(--blue);
+                border-radius: 40px;
+                color: var(--white);
+                text-transform: uppercase;
+                display: inline-block;
+                margin: auto;
+                padding: 10px 30px;
+            }
+
+            .top__title {
+                font-size: 16px;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                color: var(--blue);
+                margin-top: 10px;
+            }
+
+            .info {
+                background: var(--gray);
+                padding: 15px 30px;
+                display: flex;
+            }
+
+            .info__link {
+                flex: 1;
+                color: var(--blue);
+                text-decoration: none;
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+            }
+
+            .info__icon-box {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                background: var(--blue);
+                color: var(--gray);
+                margin-right: 10px;
+                font-size: 15px;
+            }
+
+            .section {
+                padding: 20px;
+            }
+
+            .section__heading {
+                padding: 10px;
+                border-radius: 20px;
+                text-align: center;
+                background: var(--blue);
+                color: var(--white);
+                text-transform: uppercase;
+                font-size: 20px;
+            }
+
+            .section__title {
+                font-weight: bold;
+                font-size: 20px;
+                text-transform: uppercase;
+            }
+
+            .section__sub-title {
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+
+            .section__sub-title--italic {
+                font-style: italic;
+            }
+
+            .section__desc {
+                margin-top: 10px;
+            }
+
+            .section__box {
+                padding-top: 20px;
+            }
+
+            @media print {
+                .section__box {
+                    page-break-inside: avoid;
+                }
+            }
+
+            .main {
+                margin-bottom: 100px;
+                background: var(--white);
+            }
+
+            .footer {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                padding: 0 30px;
+                background: var(--gray);
+                color: var(--white);
+                z-index: -1;
+                font-size: 14px;
+            }
+
+            .d-flex {
+                display: flex;
+            }
+
+            .mr-2 {
+                margin-right: 2rem;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="top">
+                <div class="top__heading">Krystian Sztadhaus</div>
+                <div class="top__title">
+                    <i class="fab fa-node-js"></i>
+                    javascript developer
+                </div>
+            </div>
+
+            <div class="info">
+                <a href="mailto:sztadii@gmail.com" class="info__link" target="_blank">
+                <span class="info__icon-box">
+                    <i class="fas fa-at"></i>
+                </span>
+                    sztadii@gmail.com
+                </a>
+                <a href="https://www.linkedin.com/in/krystian-sztadhaus/" class="info__link" target="_blank">
+                <span class="info__icon-box">
+                    <i class="fab fa-linkedin"></i>
+                </span>
+                linkedin.com/in/krystian-sztadhaus
+                </a>
+            </div>
+
+            <div class="info">
+                <a href="tel:+971565488268" class="info__link" target="_blank">
+                <span class="info__icon-box">
+                    <i class="fas fa-phone"></i>
+                </span>
+                    +971 54 39 888 12
+                </a>
+                <a href="https://github.com/sztadii" class="info__link" target="_blank">
+                <span class="info__icon-box">
+                    <i class="fab fa-github"></i>
+                </span>
+                    github.com/sztadii
+                </a>
+            </div>
+
+            <div class="section">
+                <div class="section__heading">Profile</div>
+                <div class="section__desc">
+                    I am a software engineer focused on productivity, clean code and best practices.
+                    I have started my professional journey with my teacher’s company and right from there I have seen the power of IT,
+                    which I am passionate about.
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section__heading">Experience</div>
+
+                <div class="section__box">
+                    <div class="section__title">Senior Software Engineer, Group 42</div>
+                    <div class="section__sub-title">UAE, Abu Dhabi, 09‑2020 - present</div>
+                    <div class="section__sub-title section__sub-title--italic">
+                        TYPESCRIPT, REACT, JEST, CYPRESS, GITLAB, PYTHON, MONGODB
+                    </div>
+                    <div class="section__desc">
+                        I am developing an oil and gas platform for one of the biggest companies in the middle east.
+                        I am focused on providing high-quality FE / BE features, to improve processes during oil and gas development.
+                    </div>
+                </div>
+
+                <div class="section__box">
+                    <div class="section__title">Full Stack Developer, SAAL</div>
+                    <div class="section__sub-title">UAE, Abu Dhabi, 08‑2019 - 09-2020</div>
+                    <div class="section__sub-title section__sub-title--italic">
+                        ES NEXT, REACT, WEBPACK, JEST, REACT-TESTING-LIBRARY, CYPRESS,
+                        EXPRESS JS, NODE, MONGO, DOCKER, GIT, BOOTSTRAP, BEM, ZEPLIN, CIRCLE CI
+                    </div>
+                    <div class="section__desc">
+                        I was developing a military platform for educating future soldiers.
+                        I was focused on the scalability and testability of our micro-service architecture.
+                    </div>
+                </div>
+
+                <div class="section__box">
+                    <div class="section__title">Javascript Developer, Alef Education</div>
+                    <div class="section__sub-title">UAE, Abu Dhabi, 06‑2017 - 07-2019</div>
+                    <div class="section__sub-title section__sub-title--italic">
+                        ES NEXT, TYPESCRIPT, REACT, APOLLO, REDUX, REDUX‑SAGA, WEBPACK, JEST, REACT-TESTING-LIBRARY, ENZYME, CYPRESS, TESTCAFE,
+                        GRAPHQL, EXPRESS JS, NODE, MONGO, DOCKER, GIT, BOOTSTRAP, BEM, STYLED-COMPONENTS, ZEPLIN, CIRCLE CI
+                    </div>
+                    <div class="section__desc">
+                        I was developing an education platform to improve students' progress and make learning easier.
+                        I was focused on the scalability ( module pattern ) and testability ( TDD ) of our application.
+                        The hardest thing about it is constant changes in business logic, so I have to create a very flexible code.
+                    </div>
+                </div>
+
+                <div class="section__box">
+                    <div class="section__title">Javascript Developer, Freelance</div>
+                    <div class="section__sub-title">Poland, Olsztyn, 02‑2016 ‑ 06‑2017</div>
+                    <div class="section__sub-title section__sub-title--italic">
+                        ES6, REACT, REDUX, VUE, VUEX, BEM, MODULE PATTERN, MOCHA, CHAI, WEBPACK, JQUERY, GULP, BOWER, PUG, SASS
+                        EXPRESS JS, NODE, MONGO, GIT, BOOTSTRAP, PHOTOSHOP ( BASICS FOR DEVELOPMENT )
+                    </div>
+                    <div class="section__desc">
+                        As a contractor, I have created many different web projects ( from simple websites to web applications ) using many technologies.Usually controlled by JIRA.
+                        I focused on learning good practices from more experienced team members.
+                        I have learned how efficient to use tools like git, chrome dev-tools, and other useful tools.
+                    </div>
+                </div>
+
+                <div class="section__box">
+                    <div class="section__title">Web Developer, Malnet</div>
+                    <div class="section__sub-title">Poland, Olsztyn, 05‑2015 ‑ 02‑2016</div>
+                    <div class="section__sub-title section__sub-title--italic">
+                        ES5, SASS, BOWER, JQUERY, HTML5, BOOTSTRAP, ANIMATE CSS
+                    </div>
+                    <div class="section__desc">
+                        I have created several projects from HTML / CSS templates to basic crud applications.
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section__heading">Certifications</div>
+
+                <div class="section__box">
+                    <div class="section__title">Rector’s scholarship for the best students</div>
+                    <div class="section__sub-title">2014</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section__heading">Education</div>
+
+                <div class="section__box">
+                    <div class="section__title">University of Warmia and Mazury in Olsztyn</div>
+                    <div class="section__sub-title">Poland, 2013 ‑ 2016</div>
+                    <div class="section__sub-title">IT systems engineering ( undergraduate / dean's leave )</div>
+                </div>
+
+                <div class="section__box">
+                    <div class="section__title">High school in Dobre Miasto</div>
+                    <div class="section__sub-title">Poland, 2009 ‑ 2012</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section__heading">Languages</div>
+
+                <div class="d-flex">
+                    <div class="section__box mr-2">
+                        <div class="section__title">Polish</div>
+                        <div class="section__sub-title">Native</div>
+                    </div>
+
+                    <div class="section__box">
+                        <div class="section__title">English</div>
+                        <div class="section__sub-title">Fluent</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section__heading">Hobbies</div>
+
+                <div class="section__box">
+                    <div class="section__sub-title">Swimming, karate, technology, soccer</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer__desc">
+                I hereby authorize you to process my personal data included in my job application for the needs of the recruitment process
+                in accordance with the Personal Data Protection Act dated 29.08.1997 (uniform text: Journal of Laws of the Republic of
+                Poland 2002 No 101, item 926 with further amendments).
+            </div>
+        </div>
+    </body>
+</html>
