@@ -7,7 +7,10 @@ async function generateCV () {
   })
   const page = await browser.newPage()
 
-  const document = fs.readFileSync('./krystian-sztadhaus.html', 'utf8')
+  const document = fs.readFileSync(
+    './krystian-sztadhaus.html',
+    'utf8'
+  )
 
   await page.setContent(document, {
     waitUntil: 'networkidle0'
