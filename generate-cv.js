@@ -1,5 +1,5 @@
-const puppeteer = require('puppeteer')
 const fs = require('fs')
+const puppeteer = require('puppeteer')
 
 async function generateCV () {
   const browser = await puppeteer.launch({
@@ -7,7 +7,10 @@ async function generateCV () {
   })
   const page = await browser.newPage()
 
-  const document = fs.readFileSync('./krystian-sztadhaus.html', 'utf8')
+  const document = fs.readFileSync(
+    './krystian-sztadhaus.html',
+    'utf8'
+  )
 
   await page.setContent(document, {
     waitUntil: 'networkidle0'
