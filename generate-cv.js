@@ -1,6 +1,8 @@
 const fs = require('fs')
 const puppeteer = require('puppeteer')
 
+console.log('dupa 5')
+
 async function generateCV () {
   const browser = await puppeteer.launch({
     headless: true
