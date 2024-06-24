@@ -1,0 +1,35 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "generate-cv.js",
+  "scripts": {
+    "build": "npm run clean && npm run format && node generate-cv.js",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,json,html}\"",
+    "clean": "rm -rf krystian-sztadhaus.pdf"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sztadii/cv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sztadii/cv/issues"
+  },
+  "homepage": "https://github.com/sztadii/cv#readme",
+  "dependencies": {
+    "puppeteer": "^22.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.2"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "semi": false,
+    "arrowParens": "avoid"
+  }
+}
