@@ -4,9 +4,9 @@
   "description": "",
   "main": "generate-cv.js",
   "scripts": {
-    "build": "npm run clean && npm run format && node generate-cv.js",
+    "build": "npm run clean && npm run format && node generate-cv.js krystian-sztadhaus",
     "format": "prettier --ignore-path .gitignore --write \"**/*.{js,json,html}\"",
-    "clean": "rm -rf krystian-sztadhaus.pdf"
+    "clean": "rm -rf *.pdf"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/sztadii/cv#readme",
   "dependencies": {
-    "puppeteer": "^22.0.0"
+    "puppeteer": "^22.15.0"
   },
   "devDependencies": {
     "prettier": "^3.3.2"
