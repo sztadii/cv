@@ -4,7 +4,7 @@
   "description": "",
   "main": "generate-cv.js",
   "scripts": {
-    "build": "npm run clean && npm run format && node generate-cv.js krystian-sztadhaus",
+    "build": "npm run clean && npm run format && node generate-cv.js --userName=krystian-sztadhaus",
     "format": "prettier --ignore-path .gitignore --write \"**/*.{js,json,html}\"",
     "clean": "rm -rf *.pdf"
   },

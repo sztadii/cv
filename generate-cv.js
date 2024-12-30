@@ -2,7 +2,7 @@ const fs = require('fs')
 const puppeteer = require('puppeteer')
 
 async function generateCV() {
-  const userName = process.argv[2]
+  const { userName } = getProcessArgs()
 
   const browser = await puppeteer.launch({
     headless: true
@@ -25,6 +25,20 @@ async function generateCV() {
   })
 
   await browser.close()
+}
+
+function getProcessArgs() {
+  const args = process.argv.slice(2)
+  const parsedArgs = {}
+
+  args.forEach(arg => {
+    if (arg.startsWith('--')) {
+      const [key, value] = arg.slice(2).split('=')
+      parsedArgs[key] = value || true
+    }
+  })
+
+  return parsedArgs
 }
 
 generateCV()
