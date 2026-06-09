@@ -6,7 +6,13 @@
   "scripts": {
     "build": "npm run clean && npm run format && node generate-cv.js --userName=krystian-sztadhaus",
     "format": "prettier --ignore-path .gitignore --write \"**/*.{js,json,html}\"",
-    "clean": "rm -rf *.pdf"
+    "clean": "rm -rf *.pdf",
+    "postinstall": "puppeteer browsers install chrome"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "puppeteer"
+    ]
   },
   "repository": {
     "type": "git",
@@ -20,7 +26,7 @@
   },
   "homepage": "https://github.com/sztadii/cv#readme",
   "dependencies": {
-    "puppeteer": "^22.15.0"
+    "puppeteer": "^24.15.0"
   },
   "devDependencies": {
     "prettier": "^3.3.2"
